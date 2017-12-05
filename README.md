@@ -20,7 +20,7 @@ Installation
 
 Genome3D can be installed with the following command from the terminal:
 
-git clone https://github
+git clone https://github.com/mtaranov/genome3D
 cd genome3D
 python setup.py install
 
