@@ -1,0 +1,2 @@
+rf_best_param:  {'min_impurity_split': 0.0, 'min_samples_leaf': 1, 'n_estimators': 500, 'min_samples_split': 4, 'criterion': 'entropy', 'max_features': 'auto', 'max_depth': None}
+svm_rbf_best_param:  {'C': 1, 'gamma': 0.0001}
