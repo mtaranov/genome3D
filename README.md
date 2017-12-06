@@ -63,9 +63,9 @@ To make predictions using DNN-FC model:
 
 preds_test = dnn.predict(x_test)
 
-To write out model performance:
+To print out model performance:
  
-dnn.test(x_test, y_test)
+print(dnn.test(x_test, y_test))
 
 More examples can be found in the exmple folder. 
 
