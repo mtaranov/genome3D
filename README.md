@@ -3,6 +3,7 @@
 Genome3D is a suite of predictive models for three-dimansional chromosome conformation. Genome3D predicts the interaction between two genomic loci in 3D nuclear space. Genome3D takes either of the two inputs:
 1) linear genomic features
 2) sequence features.
+
 The models have been trained and tested using promoter-capture HiC data.
 You can read about data curation and model details in the manuscript:
 [Predicting 3D genome](http://www.dropwizard.io/1.0.2/docs/)
