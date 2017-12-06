@@ -1,6 +1,6 @@
 # genome3D
 
-genome3D is a suite of predictive models for three-dimansional chromosome conformation. Genome3D predicts the interaction between two genomic loci in 3D nuclear space. Genome3D takes either of the two inputs:
+genome3D is a suite of predictive models for three-dimansional chromosome conformation. genome3D predicts the interaction between two genomic loci in 3D nuclear space. genome3D takes either of the two inputs:
 1) linear genomic features
 2) sequence features.
 
@@ -10,9 +10,9 @@ You can read about data curation and model details in the manuscript:
 
 ## Dependencies
 
-Genome3D is written in Python 2.7 (Anaconda Distribution 64-bit 2.7 for Linux: https://www.continuum.io/downloads)
+genome3D is written in Python 2.7 (Anaconda Distribution 64-bit 2.7 for Linux: https://www.continuum.io/downloads)
 
-Following dependencies are required to run Genome3D:
+Following dependencies are required to run genome3D:
 - theano
 - keras
 - sklearn
@@ -29,7 +29,7 @@ git clone https://github.com/mtaranov/genome3D
 cd genome3D
 python setup.py install
 ```
-## Running Genome3D
+## Running genome3D
 
 genome3D includes a suite of predictive models:
 - Random Forest
@@ -39,10 +39,10 @@ genome3D includes a suite of predictive models:
 - Siamese Deep Neural Network
 - Deep Residual Networks
 
-Models can be imported from Genome3D:
+Models can be imported from genome3D:
 
 ```
-from genome3D.models_3d import Genome3D_RandomForest, Genome3D_SVM_Linear, Genome3D_SVM_RBF,  Genome3D_DNN_FC, Genome3D_DNN_Siamese, Genome3D_DNN_FC_ResNet
+from genome3D.models_3d import genome3D_RandomForest, genome3D_SVM_Linear, genome3D_SVM_RBF,  genome3D_DNN_FC, genome3D_DNN_Siamese, genome3D_DNN_FC_ResNet
 ```
 
 Example data set can be found in exmpl_data folder:
@@ -57,7 +57,7 @@ y_test = np.load('exmpl_data/y_test.npy')
 ```
 Every model object has train and predict  attributes. For example, to train DNN-FC  model:
 ```
-dnn = Genome3D_DNN_FC(num_features=18)
+dnn = genome3D_DNN_FC(num_features=18)
 dnn.train(x_train, y_train, (x_valid, y_valid))
 ```
 To make predictions using DNN-FC model:
