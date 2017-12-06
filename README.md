@@ -20,9 +20,11 @@ Installation
 
 Genome3D can be installed with the following command from the terminal:
 
- git clone https://github.com/mtaranov/genome3D
- cd genome3D
- python setup.py install
+git clone https://github.com/mtaranov/genome3D
+
+cd genome3D
+
+python setup.py install
 
 Running Genome3D.
 
@@ -39,25 +41,26 @@ from Genome3D.models_3d import Genome3D_RandomForest, Genome3D_SVM_Linear, Genom
 
 Example data set can be found in exmpl_data folder:
 
->>> x_train = np.load('exmpl_data/X_train.npy')
->>> x_valid = np.load('exmpl_data/X_valid.npy')
->>> x_test = np.load('exmpl_data/X_test.npy')
->>> y_valid = np.load('exmpl_data/y_valid.npy')
->>> y_train = np.load('exmpl_data/y_train.npy')
->>> y_test = np.load('exmpl_data/y_test.npy')
+x_train = np.load('exmpl_data/X_train.npy')
+x_valid = np.load('exmpl_data/X_valid.npy')
+x_test = np.load('exmpl_data/X_test.npy')
+y_valid = np.load('exmpl_data/y_valid.npy')
+y_train = np.load('exmpl_data/y_train.npy')
+y_test = np.load('exmpl_data/y_test.npy')
 
 Every model object has train and predict  attributes. For example, to train DNN-FC  model:
 
- dnn = Genome3D_DNN_FC(num_features=18)
- dnn.train(x_train, y_train, (x_valid, y_valid)
+dnn = Genome3D_DNN_FC(num_features=18)
+
+dnn.train(x_train, y_train, (x_valid, y_valid)
 
 To make predictions using DNN-FC model:
 
- preds_test = dnn.predict(x_test)
+preds_test = dnn.predict(x_test)
 
 To write out model performance:
  
- dnn.test(x_test, y_test)
+dnn.test(x_test, y_test)
 
 More examples can be found in the exmple folder. 
 
