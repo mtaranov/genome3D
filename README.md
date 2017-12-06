@@ -42,7 +42,7 @@ genome3D includes a suite of predictive models:
 Models can be imported from genome3D:
 
 ```
-from genome3D.models_3d import genome3D_RandomForest, genome3D_SVM_Linear, genome3D_SVM_RBF,  genome3D_DNN_FC, genome3D_DNN_Siamese, genome3D_DNN_FC_ResNet
+from genome3D.models_3d import Genome3D_RandomForest, Genome3D_SVM_Linear, Genome3D_SVM_RBF,  Genome3D_DNN_FC, Genome3D_DNN_Siamese, Genome3D_DNN_FC_ResNet
 ```
 
 Example data set can be found in exmpl_data folder:
@@ -57,7 +57,7 @@ y_test = np.load('exmpl_data/y_test.npy')
 ```
 Every model object has train and predict  attributes. For example, to train DNN-FC  model:
 ```
-dnn = genome3D_DNN_FC(num_features=18)
+dnn = Genome3D_DNN_FC(num_features=18)
 dnn.train(x_train, y_train, (x_valid, y_valid))
 ```
 To make predictions using DNN-FC model:
