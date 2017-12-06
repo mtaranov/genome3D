@@ -7,7 +7,9 @@ The models have been trained and tested using promoter-capture HiC data.
 You can read about data curation and model details in the manuscript:
 [Predicting 3D genome](http://www.dropwizard.io/1.0.2/docs/)
 
-## DependenciesGenome3D is written in Python 2.7 (Anaconda Distribution 64-bit 2.7 for Linux: https://www.continuum.io/downloads)
+## Dependencies
+
+Genome3D is written in Python 2.7 (Anaconda Distribution 64-bit 2.7 for Linux: https://www.continuum.io/downloads)
 
 Following dependencies are required to run Genome3D:
 - theano
@@ -19,7 +21,7 @@ Also cuda and cudnn need to be installed as well.
 
 ## Installing
 
-Genome3D can be installed with the following command from the terminal:git clone https://github.com/mtaranov/genome3D
+Genome3D can be installed with the following command from the terminal:
 
 ```
 git clone https://github.com/mtaranov/genome3D
@@ -28,7 +30,7 @@ python setup.py install
 ```
 ## Running Genome3D
 
-Genome3D include a set of predictive models:
+Genome3D includes a suite of predictive models:
 - Random Forest
 - Linear Kernel Support Vector Machines (SVM)
 - RBF Kernel SVM
@@ -75,5 +77,4 @@ Hyper-parameter estimation is implemented for Random Forest and SVM models.
 ## Feature Importance
 
 Feature selection is implemented for Random Forest and Fully Connected Deep Neural Network (method: DeepLift).
-ed
 
