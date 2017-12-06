@@ -69,8 +69,8 @@ To print out model performance:
  
 print(dnn.test(x_test, y_test))
 
-More examples can be found in the example folder. 
+More examples can be found in the examples folder. 
 
 Hyper-parameter estimation is implemented for Random Forest and SVM models. 
 
-Feature selection is implemented for Random Forest and Fully Connected Deep Neural Network (method: DeepLift) models
+Feature selection is implemented for Random Forest and Fully Connected Deep Neural Network (method: DeepLift)
