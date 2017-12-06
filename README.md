@@ -42,10 +42,15 @@ from Genome3D.models_3d import Genome3D_RandomForest, Genome3D_SVM_Linear, Genom
 Example data set can be found in exmpl_data folder:
 
 x_train = np.load('exmpl_data/X_train.npy')
+
 x_valid = np.load('exmpl_data/X_valid.npy')
+
 x_test = np.load('exmpl_data/X_test.npy')
+
 y_valid = np.load('exmpl_data/y_valid.npy')
+
 y_train = np.load('exmpl_data/y_train.npy')
+
 y_test = np.load('exmpl_data/y_test.npy')
 
 Every model object has train and predict  attributes. For example, to train DNN-FC  model:
