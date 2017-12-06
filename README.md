@@ -55,7 +55,7 @@ y_valid = np.load('exmpl_data/y_valid.npy')
 y_train = np.load('exmpl_data/y_train.npy')
 y_test = np.load('exmpl_data/y_test.npy')
 ```
-Every model object has train and predict  attributes. For example, to train DNN-FC  model:
+Every model has train and predict  attributes. For example, to train Fully Connected Deep Neural Network model:
 ```
 dnn = Genome3D_DNN_FC(num_features=18)
 dnn.train(x_train, y_train, (x_valid, y_valid))
