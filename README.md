@@ -57,7 +57,7 @@ Every model object has train and predict  attributes. For example, to train DNN-
 
 dnn = Genome3D_DNN_FC(num_features=18)
 
-dnn.train(x_train, y_train, (x_valid, y_valid)
+dnn.train(x_train, y_train, (x_valid, y_valid))
 
 To make predictions using DNN-FC model:
 
