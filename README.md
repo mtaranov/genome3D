@@ -1,6 +1,6 @@
-# Genome3D
+# genome3D
 
-Genome3D is a suite of predictive models for three-dimansional chromosome conformation. Genome3D predicts the interaction between two genomic loci in 3D nuclear space. Genome3D takes either of the two inputs:
+genome3D is a suite of predictive models for three-dimansional chromosome conformation. Genome3D predicts the interaction between two genomic loci in 3D nuclear space. Genome3D takes either of the two inputs:
 1) linear genomic features
 2) sequence features.
 
@@ -22,7 +22,7 @@ Also cuda and cudnn need to be installed as well.
 
 ## Installing
 
-Genome3D can be installed with the following command from the terminal:
+genome3D can be installed with the following command from the terminal:
 
 ```
 git clone https://github.com/mtaranov/genome3D
@@ -31,7 +31,7 @@ python setup.py install
 ```
 ## Running Genome3D
 
-Genome3D includes a suite of predictive models:
+genome3D includes a suite of predictive models:
 - Random Forest
 - Linear Kernel Support Vector Machines (SVM)
 - RBF Kernel SVM
@@ -42,7 +42,7 @@ Genome3D includes a suite of predictive models:
 Models can be imported from Genome3D:
 
 ```
-from Genome3D.models_3d import Genome3D_RandomForest, Genome3D_SVM_Linear, Genome3D_SVM_RBF,  Genome3D_DNN_FC, Genome3D_DNN_Siamese, Genome3D_DNN_FC_ResNet
+from genome3D.models_3d import Genome3D_RandomForest, Genome3D_SVM_Linear, Genome3D_SVM_RBF,  Genome3D_DNN_FC, Genome3D_DNN_Siamese, Genome3D_DNN_FC_ResNet
 ```
 
 Example data set can be found in exmpl_data folder:
