@@ -14,6 +14,7 @@ Following dependencies are required to run Genome3D:
 - keras 
 - sklearn
 - numpy
+
 Also cuda and cudnn need to be installed as well.
 
 Installation
@@ -37,6 +38,7 @@ Genome3D include a set of predictive models:
 - Deep Residual Networks 
 
 Models can be imported from Genome3D:
+
 from Genome3D.models_3d import Genome3D_RandomForest, Genome3D_SVM_Linear, Genome3D_SVM_RBF,  Genome3D_DNN_FC, Genome3D_DNN_Siamese, Genome3D_DNN_FC_ResNet
 
 Example data set can be found in exmpl_data folder:
@@ -67,7 +69,8 @@ To print out model performance:
  
 print(dnn.test(x_test, y_test))
 
-More examples can be found in the exmple folder. 
+More examples can be found in the example folder. 
 
 Hyper-parameter estimation is implemented for Random Forest and SVM models. 
+
 Feature selection is implemented for Random Forest and Fully Connected Deep Neural Network (method: DeepLift) models
