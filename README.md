@@ -6,7 +6,7 @@ genome3D is a suite of predictive models for three-dimansional chromosome confor
 
 The models have been trained and tested using promoter-capture HiC data.
 You can read about data curation and model details in the manuscript:
-[Predicting 3D genome](https://www.dropbox.com/s/kbz2167k3suxaia/manuscript.pdf?dl=0)
+[Predicting 3D genome](https://www.dropbox.com/s/pnslvq4zrjvfq1z/manuscript.pdf?dl=0)
 
 ## Dependencies
 
