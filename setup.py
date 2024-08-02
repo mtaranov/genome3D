@@ -7,7 +7,7 @@ config = {
     'version': '0.1.0',
     'packages': ['genome3D'],
     'setup_requires': [],
-    'install_requires': ['numpy>=1.9', 'keras==1.2.0', 'sklearn'],
+    'install_requires': ['numpy>=1.9', 'keras==2.13.1', 'sklearn'],
     'dependency_links': [],
     'scripts': [],
     'name': 'genome3D'
